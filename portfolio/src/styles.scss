@@ -2,3 +2,7 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+.container {
+  max-width: 1140px !important; // Added !important to ensure it takes precedence
+}
