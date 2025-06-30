@@ -1,1 +1,23 @@
-<p>project-card works!</p>
+<!-- to fit 3 cards, do 350 px-->
+<div class="card shadow text-center" >
+    <!-- project description-->
+    <div class="card-body">
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.summary}}</p>
+        <button class="btn btn-primary">View More</button>
+    </div>
+
+    <!-- tags for technologies used in project -->
+    <div class="card-footer">
+        <div class="d-flex flex-wrap justify-content-center">
+            <!-- *ngfor is a structual directive-->
+            <div *ngFor="let tag of project.tags">
+                <div class="tag me-2 mb-1" [style.background-color]="tag.colour">{{tag}}</div>
+            </div>
+            <!-- <div class="tag me-2 mb-1">Angular</div>
+            <div class="tag me-2 mb-1">Typescript</div> -->
+        </div>
+    </div>
+
+
+</div>
