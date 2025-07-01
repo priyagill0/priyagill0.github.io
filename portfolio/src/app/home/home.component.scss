@@ -19,6 +19,7 @@
   animation: typing 2.5s steps(18, end),
 			 blink-caret .75s step-end infinite;
   background: linear-gradient(90deg, #9661c5, #62678f);
+  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
