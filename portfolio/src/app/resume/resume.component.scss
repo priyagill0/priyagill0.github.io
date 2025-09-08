@@ -111,9 +111,11 @@
 }
 
 .card-section {
-  background: #fff;
+  // background: linear-gradient(90deg, rgb(244, 232, 243), lavender);
+  background: linear-gradient(90deg, #eee3f8, #d7dbfe);
   border-radius: 15px;
   padding: 20px;
+  border-right: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 // .card-section {
