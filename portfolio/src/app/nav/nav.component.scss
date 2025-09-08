@@ -1,0 +1,26 @@
+.contact-icon {
+    display: block;
+    margin: 0 auto 5px;
+    max-width: 28px;
+    max-height: 28px;
+  }
+  #home, #skills, #projects, #contact {
+    scroll-margin-top: 80px; /* match your navbar height */
+  }
+
+  .nav-link.active {
+    border-bottom: 3px solid #62678f !important; 
+    font-weight: bold;
+    padding-bottom: 4px;
+    color: #62678f !important;  /* keeps text visible */
+  }
+  
+.subtitle {
+      color: #7464a5;
+}
+#contact {
+    scroll-margin-top: 80px; /* account for sticky navbar */
+    padding-top: 2rem;
+    padding-bottom: 50px;
+}
+  
