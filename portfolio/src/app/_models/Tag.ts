@@ -17,6 +17,9 @@ export class Tag {
     static readonly LANGCHAIN = new Tag('Langchain', '#f5c5ff');
     static readonly FastAPI = new Tag('FastAPI', '#74d1c4');
     static readonly JAVASCRIPT = new Tag('JavaScript', '#f7df1e');
+    static readonly Docker = new Tag('Docker', '#4a90e3');
+    static readonly Nextjs = new Tag('Next.js', '#7393e4');
+
     private constructor (private readonly key: string, public readonly colour: string) {
 
     }

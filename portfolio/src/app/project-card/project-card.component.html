@@ -5,7 +5,31 @@
         <a class="card-title h5" [href]="project.projectLink" target="_blank" rel="noopener" style="text-decoration: none;">{{project.name}}</a>
         <p class="card-text">{{project.summary}}</p>
         <!-- project link, if link does not exist then it re-routes to home page-->
-        <a class="btn btn-primary" style="background-color: #62678f; border: #62678f" [href]="project.projectLink" target="_blank" rel="noopener">View More</a>
+        <!-- Show GitHub button only if projectLink exists -->
+
+        <a
+        *ngIf="project.projectLink"
+        [href]="project.projectLink"
+        target="_blank"
+        rel="noopener"        >
+        <img
+            src="github.png"
+            alt="GitHub"
+            class="github-icon"
+        />
+        </a>
+        <a>&nbsp;&nbsp;&nbsp;</a>
+          <!-- Show Public URL button only if publicUrl exists -->
+        <a
+        *ngIf="project.publicUrl"
+        class="btn btn-primary"
+        style="background-color: #62678f; border: #62678f"
+        [href]="project.publicUrl"
+        target="_blank"
+        rel="noopener"
+        >
+        Live Site
+    </a>
     </div>
 
     <!-- tags for technologies used in project -->
